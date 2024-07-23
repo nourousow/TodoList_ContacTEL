@@ -1,0 +1,68 @@
+/* index.css */
+
+/* Body styles */
+body {
+    background-color: #E4E4E4;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Contact list styles */
+.list-group-item {
+    margin-bottom: 10px;
+}
+
+/* Modal styles */
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    background-color: #007BFF;
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.modal-footer {
+    justify-content: center;
+    border-top: none;
+}
+
+/* Button styles */
+.btn-info {
+    background-color: #17A2B8;
+    border-color: #17A2B8;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+    border-color: #117A8B;
+}
+
+.btn-danger {
+    background-color: #DC3545;
+    border-color: #DC3545;
+}
+
+.btn-danger:hover {
+    background-color: #C82333;
+    border-color: #BD2130;
+}
+
