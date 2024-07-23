@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact List App</title>
+    <meta charset="UTF-8"> <!-- Définit l'encodage des caractères à UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Configure la vue pour les appareils mobiles -->
+    <title>Contact List App</title> <!-- Titre de l'onglet du navigateur -->
 
-    <!-- Add Bootstrap CSS link -->
+    <!-- Ajoute le lien vers le fichier CSS de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
-       <link rel="stylesheet" href="css/index.css">
 
 <body>
-    <div class="container mt-5">
-        <h1 class="mb-4 text-info">Liste des contacts</h1>
-        <ul class="list-group" id="contactList"></ul>
+    <div class="container mt-5"> <!-- Conteneur principal avec marge en haut -->
+        <h1 class="mb-4 text-info">Liste des contacts</h1> <!-- Titre principal stylisé avec Bootstrap -->
 
-        <!-- Add New Contact Section -->
+        <ul class="list-group" id="contactList"></ul> <!-- Liste des contacts vide, stylée avec Bootstrap, avec ID pour manipulation JavaScript -->
+
+        <!-- Section pour ajouter un nouveau contact -->
         <div class="row mt-4">
             <div class="col text-center">
                 <button class="btn btn-info" id="addContactBtn" data-toggle="modal" data-target="#addContactModal">Ajouter un contact</button>
+                <!-- Bouton pour ouvrir la modal d'ajout de contact -->
             </div>
         </div>
     </div>
 
-    <!-- Add New Contact Modal -->
+    <!-- Modal pour ajouter un nouveau contact -->
     <div class="modal fade" id="addContactModal" tabindex="-1" role="dialog" aria-labelledby="addContactModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="addContactModalLabel">Ajouter un contact</h5>
-                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="addContactModalLabel">Ajouter un contact</h5> <!-- Titre de la modal -->
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button> <!-- Bouton de fermeture de la modal -->
                 </div>
                 <div class="modal-body">
-                    <form id="addContactForm">
+                    <form id="addContactForm"> <!-- Formulaire d'ajout de contact -->
                         <div class="mb-3">
-                            <label for="nom" class="form-label">Nom</label>
-                            <input type="text" class="form-control" id="nom" required>
+                            <label for="nom" class="form-label">Nom</label> <!-- Champ pour le nom -->
+                            <input type="text" class="form-control" id="nom" required> <!-- Champ de texte pour le nom -->
                         </div>
                         <div class="mb-3">
-                            <label for="telephone" class="form-label">Téléphone</label>
-                            <input type="text" class="form-control" id="telephone" required>
+                            <label for="telephone" class="form-label">Téléphone</label> <!-- Champ pour le téléphone -->
+                            <input type="text" class="form-control" id="telephone" required> <!-- Champ de texte pour le téléphone -->
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                    <button type="button" class="btn btn-primary" onclick="ajouterContact()">Ajouter</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button> <!-- Bouton de fermeture de la modal -->
+                    <button type="button" class="btn btn-primary" onclick="ajouterContact()">Ajouter</button> <!-- Bouton pour ajouter le contact, déclenche la fonction JavaScript -->
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap JS and jQuery scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
+    <!-- Scripts pour jQuery et Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Charge jQuery depuis un CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Charge Bootstrap JavaScript depuis un CDN -->
+    <script src="js/index.js"></script> <!-- Charge le fichier JavaScript personnalisé index.js depuis le dossier js -->
+
 </body>
 </html>
+
